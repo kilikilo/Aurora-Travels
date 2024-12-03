@@ -9,8 +9,8 @@
 <body>
     <header class="header">
         <div class="logo">Aurora Travels</div>
-        <nav>
-            <ul class="nav-links">
+        <nav class="navbar">
+            <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#destinations">Destinations</a></li>
@@ -19,141 +19,75 @@
             </ul>
         </nav>
     </header>
+
     <section id="home" class="hero">
-        <h1>Discover the World with Aurora</h1>
-        <p>Your adventure starts here!</p>
-        <a href="#packages" class="cta-button">Explore Packages</a>
+        <h1>Discover the World with Aurora Travels</h1>
+        <p>Your gateway to unforgettable experiences.</p>
+        <a href="#packages" class="btn">Explore Packages</a>
     </section>
+
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>At Aurora Travels, we make your travel dreams come true. From exotic getaways to cultural expeditions, our goal is to provide unforgettable experiences.</p>
+        <p>Welcome to Aurora Travels, where we craft personalized journeys that inspire and delight. Whether you're seeking adventure, relaxation, or cultural immersion, we’re here to make your dream vacation a reality.</p>
     </section>
+
     <section id="destinations" class="destinations">
         <h2>Destinations</h2>
-        <div class="destination-list">
-            <div class="destination">Paris</div>
-            <div class="destination">Maldives</div>
-            <div class="destination">Tokyo</div>
+        <div class="destination-grid">
+            <div class="destination-card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Experience the City of Light.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Relax on pristine beaches.</p>
+            </div>
+            <div class="destination-card">
+                <img src="images/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Explore the vibrant city life.</p>
+            </div>
         </div>
     </section>
+
     <section id="packages" class="packages">
-        <h2>Packages</h2>
-        <p>Choose from our carefully curated travel packages:</p>
-        <ul>
-            <li>Honeymoon Bliss</li>
-            <li>Adventure Escapes</li>
-            <li>Luxury Retreats</li>
-        </ul>
+        <h2>Our Packages</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Honeymoon Bliss</h3>
+                <p>A romantic escape for couples.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="package">
+                <h3>Adventure Awaits</h3>
+                <p>Thrilling experiences for adventurers.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+            <div class="package">
+                <h3>Luxury Retreats</h3>
+                <p>Exclusive experiences in style.</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div>
     </section>
+
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+
     <footer class="footer">
         <p>&copy; 2024 Aurora Travels. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('hero-image.jpg');
-    background-size: cover;
-    color: white;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-
-.about, .destinations, .packages, .contact {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.destinations .destination-list {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.destination {
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.contact form input, .contact form textarea {
-    width: 80%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact form button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
     color: white;
 }
